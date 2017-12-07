@@ -23,5 +23,17 @@
         "/assets/**"
       ]
     }
+  }],
+  "dataGroups": [{
+    "name": "api-freshness",
+    "urls": [
+      "https://api.openweathermap.org/data/2.5/weather?APPID=9135891407cf348682e1695d3f28fabc&q=Muscat&units=metric&lang=en"
+    ],
+    "cacheConfig": {
+      "maxSize": 1000,
+      "maxAge": "3d",
+      "timeout": "1m",
+      "strategy": "freshness"
+    }
   }]
 }

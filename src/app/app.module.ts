@@ -8,16 +8,20 @@ import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
 
+import {HttpClientModule} from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AngularWeatherWidgetModule.forRoot({
       key: '9135891407cf348682e1695d3f28fabc',
       name: WeatherApiName.OPEN_WEATHER_MAP,
-      baseUrl: 'http://api.openweathermap.org/data/2.5'
+      baseUrl: 'https://api.openweathermap.org/data/2.5'
     })
 ,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
