@@ -19,7 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     HttpClientModule,
     AngularWeatherWidgetModule.forRoot({
-      key: '9135891407cf348682e1695d3f28fabc',
+      key: PUT_YOUR_API_KEY_HERE,
       name: WeatherApiName.OPEN_WEATHER_MAP,
       baseUrl: 'https://api.openweathermap.org/data/2.5'
     })
