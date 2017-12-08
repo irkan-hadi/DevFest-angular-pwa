@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
    ngOnInit(): void {
     
      // Make the HTTP request:
-     this.http.get('https://api.openweathermap.org/data/2.5/weather?APPID=9135891407cf348682e1695d3f28fabc&q=Muscat&units=metric&lang=en').subscribe(data => {
+     this.http.get('https://api.openweathermap.org/data/2.5/weather?APPID=YOUR_API_CODE_HERE&q=Muscat&units=metric&lang=en').subscribe(data => {
        // Read the result field from the JSON response.
        this.results = data['main'].temp;
 
