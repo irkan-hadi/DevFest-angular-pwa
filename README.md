@@ -7,4 +7,4 @@ Angular 5.1 with cli 1.6, open weather widget and chart.js angular components ar
 We also make our own native call to the web serivce to cache the results using the service worker so if the network is down, the forecast will be down but not the current weather
 
 # Important
-Make sure you get your own open weather api key (its free from their website, 60 visits per hours AFAK) and replace it inside the source
+Make sure you get your own open weather api key (its free from their website, 60 visits per hours AFAIK) and replace it inside the source
